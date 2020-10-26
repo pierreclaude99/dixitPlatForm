@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+//
+// Color
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #6E84A3 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$dark:     #162A49 !default;
+$primary: #1abc9c !default;
+$info:          #FFA500 !default;
+
+.text-gray-700 {
+    color: $gray-700!important;
+}
+
+
+//
+// Typo
+//
+$font-family-base: 'Poppins', sans-serif !default;
+
+
+
+
+
+
+
+
+@import "extra-style/_icomoon.scss";
+@import "extra-style/_nav.scss";
+
+@import "node_modules/bootstrap/scss/bootstrap";

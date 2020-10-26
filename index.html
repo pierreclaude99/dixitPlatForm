@@ -1,1 +1,173 @@
-peiopmijmo
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dixit - Platform</title>
+  <meta name="description" content="Dixit platforme">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- nav ================================================== -->
+  <nav class="mobile-offcanvas bg-dark ">
+    <div class="sidebar-sticky">
+      <div class="d-flex flex-column p-2">
+        <div class="mb-2 text-center">
+          <a class="navbar-brand" href="index.html">
+            <img class="d-block mx-auto" src="assets/brand/logo-white.svg" alt="airporting">
+          </a>
+        </div>
+        <!-- /brand -->
+
+      <!-- main-menu -->
+        <div class="main-menu">
+          <ul class="p-0">
+            <p class="h6 small text-gray-700 text-uppercase">Veille</p>
+            <li class="nav-item">
+              <a class="nav-link active px-0" href="dashboard.html">
+                <span class="ic icon-border-all mr-2"></span> Tableau de bord
+              </a>
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="dashboard.html">
+              <span class="ic icon-folder mr-2"></span> Dossiers <span class="nav-dropdown" href="#sidebarFolder" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarFolder"><span class="icon-arrow-down"></span>
+            </a>
+        
+            <div class="collapse in" id="sidebarFolder">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="./docs/getting-started.html" class="nav-link small">
+                    Justice<span href="#" class="badge badge-primary ml-2">10</span>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="./docs/design-file.html" class="nav-link small">
+                    Education<span href="#" class="badge badge-primary ml-2">15</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="dashboard.html">
+              <span class="ic icon-bell mr-2"></span> Alertes <span class="nav-dropdown" href="#sidebarAlerts" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAlerts"><span class="icon-arrow-down"></span>
+            </a>
+        
+            <div class="collapse in" id="sidebarAlerts">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item ">
+                  <a href="./docs/getting-started.html" class="nav-link small">
+                    Justice<span href="#" class="badge badge-primary ml-2">10</span>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="./docs/design-file.html" class="nav-link small">
+                    Education<span href="#" class="badge badge-primary ml-2">15</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <hr class="hr-nav">
+          <p class="h6 small text-gray-700 text-uppercase">Recherche</p>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#">
+              <span class="ic icon-twitter mr-2"></span> Twitter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#">
+              <span class="ic icon-and-paper mr-2"></span> Questions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#">
+              <span class="ic icon-hand-point-up mr-2"></span> Interventions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#">
+              <span class="ic icon-twitter mr-2"></span> Amendement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-0" href="#">
+              <span class="ic icon-contact mr-2"></span> Contact
+            </a>
+          </li>
+
+        <hr class="hr-nav">
+        <p class="h6 small text-gray-700 text-uppercase">Analyses <span href="#" class="badge badge-info ml-2 text-white">nouveau</span></p>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="dashboard.html">
+              <span class="ic icon-chart-pie-alt mr-2"></span> Europe <span class="nav-dropdown" href="#sidebarEurope" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarEurope"><span class="icon-arrow-down"></span>
+            </a>
+        
+            <div class="collapse in" id="sidebarEurope">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="./docs/getting-started.html" class="nav-link small">
+                    Europe<span href="#" class="badge badge-primary ml-2">10</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="dashboard.html">
+              <span class="ic icon-chart-bar mr-2"></span> Senat <span class="nav-dropdown" href="#sidebarSenat" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarSenat"><span class="icon-arrow-down"></span>
+            </a>
+        
+            <div class="collapse in" id="sidebarSenat">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="./docs/getting-started.html" class="nav-link small">
+                    Senat<span href="#" class="badge badge-primary ml-2">10</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-0" href="dashboard.html">
+              <span class="ic icon-chart-aera mr-2"></span> Assemblée <span class="nav-dropdown" href="#sidebarAssembl" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarAssembl"><span class="icon-arrow-down"></span>
+            </a>
+        
+            <div class="collapse in" id="sidebarAssembl">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="./docs/getting-started.html" class="nav-link small">
+                    Assemblée<span href="#" class="badge badge-primary ml-2">10</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          </ul>
+        </div>
+      <!-- /main-menu -->
+   </div>    
+
+  </div>
+  
+  </nav>
+<!-- /nav ================================================== -->
+</body>
+
+</html>

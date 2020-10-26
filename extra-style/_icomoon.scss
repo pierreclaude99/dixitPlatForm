@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('assets/icon/icomoon.eot?d06356');
+    src:  url('assets/icon/icomoon.eot?d06356#iefix') format('embedded-opentype'),
+      url('assets/icon/icomoon.ttf?d06356') format('truetype'),
+      url('assets/icon/icomoon.woff?d06356') format('woff'),
+      url('assets/icon/icomoon.svg?d06356#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-and-paper:before {
+    content: "\e900";
+  }
+  .icon-arrow_drop_down:before {
+    content: "\e901";
+  }
+  .icon-arrow-down:before {
+    content: "\e902";
+  }
+  .icon-arrow-left:before {
+    content: "\e903";
+  }
+  .icon-arrow-right:before {
+    content: "\e904";
+  }
+  .icon-arrow-up:before {
+    content: "\e905";
+  }
+  .icon-bell:before {
+    content: "\e906";
+  }
+  .icon-border-all:before {
+    content: "\e907";
+  }
+  .icon-cancel:before {
+    content: "\e908";
+  }
+  .icon-chart-aera:before {
+    content: "\e909";
+  }
+  .icon-chart-bar:before {
+    content: "\e90a";
+  }
+  .icon-chart-pie-alt:before {
+    content: "\e90b";
+  }
+  .icon-check_box_outline_blank:before {
+    content: "\e90c";
+  }
+  .icon-check_box:before {
+    content: "\e90d";
+  }
+  .icon-clock:before {
+    content: "\e90e";
+  }
+  .icon-close:before {
+    content: "\e90f";
+  }
+  .icon-contact:before {
+    content: "\e910";
+  }
+  .icon-export:before {
+    content: "\e911";
+  }
+  .icon-file-alt:before {
+    content: "\e912";
+  }
+  .icon-filter_list:before {
+    content: "\e913";
+  }
+  .icon-folder:before {
+    content: "\e914";
+  }
+  .icon-grade:before {
+    content: "\e915";
+  }
+  .icon-hand-point-up:before {
+    content: "\e916";
+  }
+  .icon-heart:before {
+    content: "\e917";
+  }
+  .icon-inbox:before {
+    content: "\e918";
+  }
+  .icon-info:before {
+    content: "\e919";
+  }
+  .icon-life-ring-regular:before {
+    content: "\e91a";
+  }
+  .icon-menu:before {
+    content: "\e91b";
+  }
+  .icon-more:before {
+    content: "\e91c";
+  }
+  .icon-power-off:before {
+    content: "\e91d";
+  }
+  .icon-radio-default:before {
+    content: "\e91e";
+  }
+  .icon-radio-selected:before {
+    content: "\e91f";
+  }
+  .icon-search:before {
+    content: "\e920";
+  }
+  .icon-sort-down:before {
+    content: "\e921";
+  }
+  .icon-twitter:before {
+    content: "\e922";
+  }
+  

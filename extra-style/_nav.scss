@@ -1,0 +1,61 @@
+//
+// Navigation
+//
+.mobile-offcanvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    overflow-y: auto !important;
+}
+
+.hr-nav {
+    border:0px !important;
+    background-color: $gray-700 !important;
+    height: 1px;
+}
+
+
+
+.nav-link.active {
+    color: $white;
+    .ic {
+        color: $primary !important;      
+    }
+}
+
+.nav-dropdown {
+    display: inline-block;
+    float: right; 
+}
+
+.nav-link {
+    color: $gray-700;
+    &:hover {
+        color: $white;
+        .ic{
+            color: $primary;
+        }
+    }
+    .nav-dropdown{
+        color: $gray-700 !important;
+        &:hover{
+            color: $white !important;      
+        }
+    }
+}
+
+.collapse.show {
+    transition: height 1s ease-out !important;
+    height: auto;
+    overflow: hidden;
+}
+.collapse.in{
+    transition: height 1s ease-out !important;
+    height: 0px;
+    display: block;
+}
