@@ -13,7 +13,6 @@
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -25,64 +24,64 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-and-paper:before {
+  .icon-arrow-down:before {
     content: "\e900";
   }
-  .icon-arrow_drop_down:before {
+  .icon-arrow-left:before {
     content: "\e901";
   }
-  .icon-arrow-down:before {
+  .icon-arrow-right:before {
     content: "\e902";
   }
-  .icon-arrow-left:before {
+  .icon-arrow-up:before {
     content: "\e903";
   }
-  .icon-arrow-right:before {
+  .icon-bell:before {
     content: "\e904";
   }
-  .icon-arrow-up:before {
+  .icon-cancel:before {
     content: "\e905";
   }
-  .icon-bell:before {
+  .icon-chart-aera:before {
     content: "\e906";
   }
-  .icon-border-all:before {
+  .icon-chart-bar:before {
     content: "\e907";
   }
-  .icon-cancel:before {
+  .icon-chart-pie-alt:before {
     content: "\e908";
   }
-  .icon-chart-aera:before {
+  .icon-check-box-blank:before {
     content: "\e909";
   }
-  .icon-chart-bar:before {
+  .icon-check-box:before {
     content: "\e90a";
   }
-  .icon-chart-pie-alt:before {
+  .icon-clock:before {
     content: "\e90b";
   }
-  .icon-check_box_outline_blank:before {
+  .icon-close:before {
     content: "\e90c";
   }
-  .icon-check_box:before {
+  .icon-contact:before {
     content: "\e90d";
   }
-  .icon-clock:before {
+  .icon-dashboard:before {
     content: "\e90e";
   }
-  .icon-close:before {
+  .icon-drop_down:before {
     content: "\e90f";
   }
-  .icon-contact:before {
+  .icon-export:before {
     content: "\e910";
   }
-  .icon-export:before {
+  .icon-file-alt:before {
     content: "\e911";
   }
-  .icon-file-alt:before {
+  .icon-filter_list:before {
     content: "\e912";
   }
-  .icon-filter_list:before {
+  .icon-finger-pointer:before {
     content: "\e913";
   }
   .icon-folder:before {
@@ -91,19 +90,19 @@
   .icon-grade:before {
     content: "\e915";
   }
-  .icon-hand-point-up:before {
+  .icon-hand-paper:before {
     content: "\e916";
   }
   .icon-heart:before {
     content: "\e917";
   }
-  .icon-inbox:before {
+  .icon-help:before {
     content: "\e918";
   }
-  .icon-info:before {
+  .icon-inbox:before {
     content: "\e919";
   }
-  .icon-life-ring-regular:before {
+  .icon-info:before {
     content: "\e91a";
   }
   .icon-menu:before {
@@ -124,10 +123,13 @@
   .icon-search:before {
     content: "\e920";
   }
-  .icon-sort-down:before {
+  .icon-send:before {
     content: "\e921";
   }
-  .icon-twitter:before {
+  .icon-sort-down:before {
     content: "\e922";
+  }
+  .icon-twitter:before {
+    content: "\e923";
   }
   

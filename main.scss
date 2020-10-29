@@ -5,25 +5,73 @@
 // Color
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$white:    #fff    !default;
+$gray-100: #F9FBFD !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-400: #F7F9FD !default;
+$gray-500: #95AAC9 !default;
 $gray-600: #6c757d !default;
 $gray-700: #6E84A3 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #000    !default;
 
 $dark:     #162A49 !default;
-$primary: #1abc9c !default;
-$info:          #FFA500 !default;
+$primary: #1abc9c  !default;
+$secondary: #0F7561!default;
+$info:     #FFA500 !default;
+
+$dropdown-link-color:               $gray-700 !default;
+$dropdown-link-hover-color:         $primary !default;
+$dropdown-link-hover-bg:            $gray-400 !default;
+
+$body-bg:  $gray-100 !default;
+$headings-color:              $dark !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-xs:                $font-size-base * .75 !default;
+
+
+body {
+    letter-spacing: -0.28px;
+    
+}
+
+
+.text-gray-400 {
+    color: $gray-400!important;
+}
+
+.text-gray-500 {
+    color: $gray-500!important;
+}
 
 .text-gray-700 {
     color: $gray-700!important;
 }
+
+.bg-gray-100 {
+    background-color: $gray-100!important;
+}
+
+
+.bg-gray-400 {
+    background-color: $gray-400!important;
+}
+
+.bg-gray-500 {
+    background-color: $gray-500!important;
+}
+
+.bg-gray-700 {
+    background-color:  $gray-700!important;
+}
+
+
+
 
 
 //
@@ -31,14 +79,36 @@ $info:          #FFA500 !default;
 //
 $font-family-base: 'Poppins', sans-serif !default;
 
+//
+// layout
+//
+.dashboard-main {
+    padding-left: 250px;
+}
+
+@media all and (max-width:992px) {
+    .dashboard-main {
+        padding-left: 0px;
+    }
+}
 
 
 
 
+
+
+
+
+
+.avatar-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 
 
 @import "extra-style/_icomoon.scss";
+@import "extra-style/_tab.scss";
 @import "extra-style/_nav.scss";
 
 @import "node_modules/bootstrap/scss/bootstrap";

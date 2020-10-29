@@ -1,0 +1,33 @@
+//
+// Tabulation
+//
+
+
+.tab-nav{
+    color: $gray-700 !important;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: $font-size-sm;
+    border-bottom: 1px solid $white;
+    &:hover {
+        background-color: $gray-400;
+        border-bottom: 1px solid $gray-400;
+    }
+ }
+
+ @media all and (max-width:992px) {
+    .tab-nav{
+        width: 50%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+
+ .active.tab-nav{
+     color: $dark !important;
+    border-bottom: 4px solid $primary;
+ }

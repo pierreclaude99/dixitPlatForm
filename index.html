@@ -20,11 +20,16 @@
   <nav class="mobile-offcanvas bg-dark ">
     <div class="sidebar-sticky">
       <div class="d-flex flex-column p-2">
-        <div class="mb-2 text-center">
-          <a class="navbar-brand" href="index.html">
-            <img class="d-block mx-auto" src="assets/brand/logo-white.svg" alt="airporting">
-          </a>
-        </div>
+        <div class="row my-2">
+          <div class="col-6 col-lg-12 text-center">
+            <a class="navbar-brand" href="index.html">
+              <img class="d-block mx-auto" src="assets/brand/logo-white.svg" alt="airporting">
+            </a>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end d-lg-none">
+            <button data-trigger="#navbar_main" class="d-lg-none btn btn-link" type="button">  <span class="ic icon-close"></span></button>
+          </div>
+         </div>
         <!-- /brand -->
 
       <!-- main-menu -->
@@ -33,7 +38,7 @@
             <p class="h6 small text-gray-700 text-uppercase">Veille</p>
             <li class="nav-item">
               <a class="nav-link active px-0" href="dashboard.html">
-                <span class="ic icon-border-all mr-2"></span> Tableau de bord
+                <span class="ic icon-dashboard mr-2"></span> Tableau de bord
               </a>
             </li>
 
@@ -89,17 +94,17 @@
           </li>
           <li class="nav-item">
             <a class="nav-link px-0" href="#">
-              <span class="ic icon-and-paper mr-2"></span> Questions
+              <span class="ic icon-hand-paper mr-2"></span> Questions
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-0" href="#">
-              <span class="ic icon-hand-point-up mr-2"></span> Interventions
+              <span class="ic icon-finger-pointer mr-2"></span> Interventions
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-0" href="#">
-              <span class="ic icon-twitter mr-2"></span> Amendement
+              <span class="ic icon-file-alt mr-2"></span> Amendement
             </a>
           </li>
           <li class="nav-item">
@@ -163,11 +168,177 @@
         </div>
       <!-- /main-menu -->
    </div>    
-
   </div>
-  
   </nav>
 <!-- /nav ================================================== -->
+
+<!-- Main ================================================== -->
+<main class="flex-grow-1 dashboard-main" role="main">
+  
+  <!-- top bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex justify-content-between">
+    <div class="" id="">
+    <button data-trigger="#navbar_main" class="d-lg-none btn btn-light" type="button">  <span class="ic icon-menu"></span></button>
+    </div>
+    
+    
+      <ul class="navbar-nav">
+        <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+          <a class="nav-link text-decoration-none text-gray-700" href="#">
+            <span class="ic icon-life-ring-regular mr-2"></span>contact
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+          <a class="nav-link text-decoration-none text-gray-700" href="#">
+            <span class="ic icon-life-ring-regular mr-2"></span>aide
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center ml-2">
+          <a href="" class="avatar avatar-sm avatar-online text-decoration-none text-dark">
+            Pierre claude
+            <img src="assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle ml-3">
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+          <a href="" class="text-decoration-none">
+            <span class="ic icon-power-off ml-3"></span>
+          </a>
+        </li>
+      </ul>
+    
+  </nav>
+<!-- /top bar -->
+
+<!-- header -->
+<div class="bg-gray-400 p-3 border-bottom">
+  <div class="row">
+    <div class="col-12 col-sm-6 px-4">
+      <p class="small text-uppercase text-gray-700 mb-1">Dixit</p>
+      <h1 class="h3 text-dark">Tableau de bord</h1>
+    </div>
+    <div class="col-12 col-sm-6 d-block d-lg-flex align-items-center  justify-content-lg-end  flex-lg-row">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle mb-3 mb-lg-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Créer une alerte
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Mot clé</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Texte legislatif</a>
+          </div>
+      </div>
+      <button type="button" class="btn btn-secondary ml-lg-4">Créer un dossier</button>
+    </div>
+  </div>
+</div>
+<!-- /header -->
+
+<!-- Kpi -->
+<section id="kpi" class="p-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-4 px-3 py-2 d-block d-lg-flex justify-content-stretch">
+        <div class="border rounded-lg bg-white p-3">
+          <div class="row align-items-center">
+            <div class="col">
+              <p class="small text-uppercase text-gray-500 mb-1">Nombre total d'alertes configurés </p>
+              <p class="h3 text-primary">25</p>
+            </div>
+            <div class="col-auto">
+              <span class="ic icon-bell text-primary bg-gray-400 d-block h3 p-3 mb-0"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 px-3 py-2 d-block d-lg-flex justify-content-stretch">
+        <div class="border rounded-lg bg-white p-3">
+          <div class="row align-items-center">
+            <div class="col">
+              <p class="small text-uppercase text-gray-500 mb-1">Nombre total de dossiers </p>
+              <p class="h3 text-primary">30</p>
+            </div>
+            <div class="col-auto">
+              <span class="ic icon-folder text-primary bg-gray-400 d-block h3 p-3 mb-0"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Kpi -->
+
+<!-- alert-and-folder -->
+<section id="alert-and-folder" class="p-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-8  px-3 py-2">
+        <div class="border rounded-lg bg-white">
+          <nav class="d-block d-lg-flex justify-content-between align-items-stretch pl-3 border-bottom">
+            <div>
+              <h3 class="h6 mb-0 py-3">Dernières alertes reçues</h3>
+            </div>
+            
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item tab-nav active" id="nav-home-tab" data-toggle="tab" href="#tab-tweet" role="tab" aria-controls="nav-home" aria-selected="true">Tweet<span href="#" class="badge badge-primary ml-2">10</span></a>
+              <a class="nav-item tab-nav" id="nav-profile-tab" data-toggle="tab" href="#tab-questions" role="tab" aria-controls="nav-profile" aria-selected="false">Questions<span href="#" class="badge badge-primary ml-2"></span></a>
+              <a class="nav-item tab-nav" id="nav-contact-tab" data-toggle="tab" href="#tab-interventions" role="tab" aria-controls="nav-contact" aria-selected="false">Interventions<span href="#" class="badge badge-primary ml-2">5</span></a>
+              <a class="nav-item tab-nav" id="nav-contact-tab" data-toggle="tab" href="#tab-amendenments" role="tab" aria-controls="nav-contact" aria-selected="false">Amendements<span href="#" class="badge badge-primary ml-2"></span></a>            </div>
+          </nav>
+          <div class="tab-content p-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="tab-tweet" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
+              </div>         
+            </div>
+            <div class="tab-pane fade" id="tab-questions" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
+              </div>  
+            </div>
+            <div class="tab-pane fade" id="tab-interventions" role="tabpanel" aria-labelledby="nav-contact-tab">Interventions</div>
+            <div class="tab-pane fade" id="tab-amendenments" role="tabpanel" aria-labelledby="nav-contact-tab">Amendements</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4  px-3 py-2">
+        <div class="border rounded-lg bg-white p-3">
+          <div class="row align-items-center">
+            <div class="col">
+              <p class="small text-uppercase text-gray-500 mb-1">Nombre total de dossiers </p>
+              <p class="h3 text-primary">30</p>
+            </div>
+            <div class="col-auto">
+              <span class="ic icon-folder text-primary bg-gray-400 d-block h3 p-3 mb-0"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /alert-and-folder -->
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<!-- /Main ================================================== -->
+
 </body>
 
+<script src="js/extra-js.js"></script>
 </html>
