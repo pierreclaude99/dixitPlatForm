@@ -7,7 +7,7 @@
 
 $white:    #fff    !default;
 $gray-100: #F9FBFD !default;
-$gray-200: #e9ecef !default;
+$gray-200: #EDF2F9 !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #F7F9FD !default;
 $gray-500: #95AAC9 !default;
@@ -21,6 +21,47 @@ $dark:     #162A49 !default;
 $primary: #1abc9c  !default;
 $secondary: #0F7561!default;
 $info:     #FFA500 !default;
+$danger:        #EB4C4C !default;
+
+$lrem:  aliceblue !default;
+$ecolo: green      !default;
+$socialiste: pink  !default;
+$id: brown         !default;
+$cre: darkcyan     !default;
+
+
+.badge-lrem {
+    color: $dark;
+    background-color: $lrem;
+}
+
+.badge-ecolo {
+    color: $white;
+    background-color: $ecolo;
+}
+
+.badge-socialiste {
+    color: $white;
+    background-color: $socialiste;
+}
+
+.badge-id {
+    color: $white;
+    background-color: $id;
+}
+
+.badge-cre {
+    color: $white;
+    background-color: $cre;
+}
+
+.badge-lfi {
+    color: $white;
+    background-color: $danger;
+}
+
+
+
 
 $dropdown-link-color:               $gray-700 !default;
 $dropdown-link-hover-color:         $primary !default;
@@ -40,7 +81,6 @@ body {
     
 }
 
-
 .text-gray-400 {
     color: $gray-400!important;
 }
@@ -53,10 +93,17 @@ body {
     color: $gray-700!important;
 }
 
+//
+// Background
+//
 .bg-gray-100 {
     background-color: $gray-100!important;
 }
-
+.bg-hover-gray-100 {
+    &:hover {
+        background-color: $gray-100!important;
+    }
+}
 
 .bg-gray-400 {
     background-color: $gray-400!important;
@@ -68,6 +115,16 @@ body {
 
 .bg-gray-700 {
     background-color:  $gray-700!important;
+}
+
+
+//
+// Border
+//
+$card-border-color:     $gray-200 !default;
+
+.border.border-gray-200 {
+    border-color: $primary !important;
 }
 
 
@@ -92,20 +149,19 @@ $font-family-base: 'Poppins', sans-serif !default;
     }
 }
 
-
-
-
-
-
-
-
-
 .avatar-img {
     width: 2.5rem;
     height: 2.5rem;
 }
 
+.avatar-img-sm {
+    width: 2.3rem;
+    height: 2.3rem;
+}
 
+.no-arrow.dropdown-toggle::after{
+    display: none;
+}
 
 @import "extra-style/_icomoon.scss";
 @import "extra-style/_tab.scss";

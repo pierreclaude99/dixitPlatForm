@@ -19,7 +19,9 @@
     height: 1px;
 }
 
-
+.nav-item {
+    list-style-type: none;
+}
 
 .nav-link.active {
     color: $white;

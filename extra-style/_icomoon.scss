@@ -24,6 +24,28 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+.like {
+  .ic {
+    &:hover{
+      &::before{
+        color: $primary !important;
+      }
+    }
+    
+  } 
+}
+
+.like.liked {
+  .ic {
+       &::before{
+        color: $primary !important;
+      }   
+  } 
+}
+
+
+
+
   .icon-arrow-down:before {
     content: "\e900";
   }

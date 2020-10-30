@@ -237,8 +237,8 @@
 <section id="kpi" class="p-2">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-lg-4 px-3 py-2 d-block d-lg-flex justify-content-stretch">
-        <div class="border rounded-lg bg-white p-3">
+      <div class="col-12 col-lg-4 px-3 py-2 d-flex justify-content-stretch">
+        <div class="card p-3 flex-grow-1">
           <div class="row align-items-center">
             <div class="col">
               <p class="small text-uppercase text-gray-500 mb-1">Nombre total d'alertes configurés </p>
@@ -251,8 +251,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-4 px-3 py-2 d-block d-lg-flex justify-content-stretch">
-        <div class="border rounded-lg bg-white p-3">
+      <div class="col-12 col-lg-4 px-3 py-2 d-flex justify-content-stretch">
+        <div class="card p-3 flex-grow-1">
           <div class="row align-items-center">
             <div class="col">
               <p class="small text-uppercase text-gray-500 mb-1">Nombre total de dossiers </p>
@@ -273,8 +273,8 @@
 <section id="alert-and-folder" class="p-2">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-lg-8  px-3 py-2">
-        <div class="border rounded-lg bg-white">
+      <div class="col-12 col-lg-8 px-3 py-2 d-flex justify-content-stretch">
+        <div class="card">
           <nav class="d-block d-lg-flex justify-content-between align-items-stretch pl-3 border-bottom">
             <div>
               <h3 class="h6 mb-0 py-3">Dernières alertes reçues</h3>
@@ -289,37 +289,987 @@
           <div class="tab-content p-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="tab-tweet" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Tweeter</a>
-              </div>         
+
+                <!-- tweet -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-03.png" alt="avatar" class="avatar-img-sm rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Bruno Jacquart</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <a href="#" class="text-gray-500">@Bjacquart</a> <span class="ic icon-clock ml-2"></span> 18 min
+                      </p>
+                    </div>
+
+                    <!-- groupe-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <span class="badge badge-lrem py-1 px-2">LREM</span>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouvernement
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="#" class="text-gray-700">Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia </a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /tweet -->
+
+                <!-- tweet -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-05.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Anne Genetet</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <a href="#" class="text-gray-500">@Agenetet</a> <span class="ic icon-clock ml-2"></span> 18 min
+                      </p>
+                    </div>
+
+                    <!-- groupe-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <span class="badge badge-cre py-1 px-2">CRE</span>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="#" class="text-gray-700"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /tweet -->
+
+
+                <!-- tweet -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-01.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Alice Konte</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <a href="#" class="text-gray-500">@Akonte</a> <span class="ic icon-clock ml-2"></span> 18 min
+                      </p>
+                    </div>
+
+                    <!-- groupe-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <span class="badge badge-lfi py-1 px-2">LFI</span>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="#" class="text-gray-700">  Divitior mihi et affluentior videtur esse vera amicitia nec observare restricte,</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /tweet -->
+
+
+                <!-- tweet -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                      
+                        <img src="assets/img/avatar-08.png" alt="avatar" class="avatar-img rounded-circle">
+                      
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">George Klavek</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <a href="#" class="text-gray-500">@GKlavek</a> <span class="ic icon-clock ml-2"></span> 18 min
+                      </p>
+                    </div>
+
+                    <!-- groupe-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <span class="badge badge-id py-1 px-2">ID</span>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/europe.png" alt="avatar" class="avatar-img-sm rounded-circle"> Europe
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="#" class="text-gray-700">Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus. Hoc quidem est nimis exigue et exiliter ad calculos</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /tweet -->
+
+              </div>
+
             </div>
             <div class="tab-pane fade" id="tab-questions" role="tabpanel" aria-labelledby="nav-profile-tab">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">Question</a>
+
+                <!-- questions -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-01.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Alice Konte</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <span class="ic icon-clock"></span> 18 min
+                      </p>
+                    </div>
+
+                    <!-- Type de question-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <p class="m-0 text-gray-500">
+                        Question écrite
+                      </p>
+
+                      <p class="m-0 text-gray-500">
+                        Statut: retiré
+                      </p>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="single/question.html" class="text-gray-700">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /questions -->
+
+                <!-- questions -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-09.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Cyrie Lannister</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <span class="ic icon-clock"></span> 55 min
+                      </p>
+                    </div>
+
+                    <!-- Type de question-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <p class="m-0 text-gray-500">
+                        Question oral
+                      </p>
+
+                      <p class="m-0 text-gray-500">
+                        Statut: repondu
+                      </p>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="single/question.html" class="text-gray-700">Restabat ut Caesar post haec properaret accitus et abstergendae causa suspicionis sororem suam,</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /questions -->
+
+                <!-- questions -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-07.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Peter Dinklage</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <span class="ic icon-clock"></span> 55 min
+                      </p>
+                    </div>
+
+                    <!-- Type de question-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <p class="m-0 text-gray-500">
+                        Question oral
+                      </p>
+
+                      <p class="m-0 text-gray-500">
+                        Statut: repondu
+                      </p>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="single/question.html" class="text-gray-700">Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /questions -->
+
+                <!-- questions -->
+                <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                  <div class="row align-items-center mb-3">
+                    <!-- Avatar -->
+                    <div class="col-auto">
+                        <img src="assets/img/avatar-04.png" alt="avatar" class="avatar-img rounded-circle">
+                    </div>
+                    
+                    <!-- nom & meta -->
+                    <div class="col ml-n2">
+                      <p class="m-0 text-dark text-decoration-none">
+                        <a href="single/profil-depute.html" class="text-decoration-none text-dark">Nicolas Taillander</a>
+                      </p>
+                      <p class="m-0 text-gray-500">
+                        <span class="ic icon-clock"></span> 55 min
+                      </p>
+                    </div>
+
+                    <!-- Type de question-->
+                    <div class="d-none d-lg-block col ml-n2">
+                      <p class="m-0 text-gray-500">
+                        Question oral
+                      </p>
+
+                      <p class="m-0 text-gray-500">
+                        Statut: repondu
+                      </p>
+                    </div>
+
+                    <!-- assemblée-->
+                    <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                      <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                    </div>
+
+                    <!-- like -->
+                    <div class="col-auto">                     
+                      <div class="col ml-n2">
+                        <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-auto pl-5">
+                      <p class="m-0 pl-4"> <a href="single/question.html" class="text-gray-700">Quam ob rem ut ii qui superiores sunt submittere se debent in amicitia, sic quodam</a></p>
+                    </div>  
+                  </div>
+                </div>
+                <!-- /questions -->
+
+
+
               </div>  
             </div>
-            <div class="tab-pane fade" id="tab-interventions" role="tabpanel" aria-labelledby="nav-contact-tab">Interventions</div>
-            <div class="tab-pane fade" id="tab-amendenments" role="tabpanel" aria-labelledby="nav-contact-tab">Amendements</div>
+
+
+            <div class="tab-pane fade" id="tab-interventions" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+              <!-- intervention -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-01.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Alice Konte</a><span class="badge badge-lfi ml-1 py-1 px-2">LFI</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- groupe-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Deuxième séance du jeudi 29 octobre 2020
+                    </p>
+                  </div>
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/intervention.html" class="text-gray-700">Iam virtutem ex consuetudine vitae sermonisque nostri interpretemur nec eam,</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /intervention -->
+
+              <!-- intervention -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-11.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Alain Couli</a><span class="badge badge-lrem ml-1 py-1 px-2">LREM</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- groupe-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Deuxième séance du jeudi 29 octobre 2020
+                    </p>
+                  </div>
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/intervention.html" class="text-gray-700">Omitto iuris dictionem in libera civitate contra leges senatusque consulta; caedes </a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /intervention -->
+
+              <!-- intervention -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-12.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Pierre Chouettee</a><span class="badge badge-cre ml-1 py-1 px-2">CRE</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- groupe-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Deuxième séance du jeudi 29 octobre 2020
+                    </p>
+                  </div>
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/intervention.html" class="text-gray-700">Ex his quidam aeternitati se commendari posse per statuas aestimantes eas ardenter </a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /intervention -->
+
+              <!-- intervention -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-13.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Amandine Leguec</a><span class="badge badge-id ml-1 py-1 px-2">ID</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- groupe-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Deuxième séance du jeudi 29 octobre 2020
+                    </p>
+                  </div>
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle"> Assbl. Ntl.
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/intervention.html" class="text-gray-700">  Divitior mihi et affluentior videtur esse vera amicitia nec observare restricte,</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /intervention -->
+            </div>
+
+
+            <div class="tab-pane fade" id="tab-amendenments" role="tabpanel" aria-labelledby="nav-contact-tab">
+              
+              <!-- Amendement -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-14.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Georgette Abitbol</a><span class="badge badge-lrem ml-1 py-1 px-2">LREM</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      PLFR pour 2020 (n°3074)
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      Article 4 - N°3366
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Retiré avt. discussion
+                    </p>
+                  </div>
+
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col-1 ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle">
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/amendment.html" class="text-gray-700">Au 1er alinéa, après les mots « pour des patients », sont insérés les mots « et leurs [...]</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /Amendements -->
+
+              <!-- Amendement -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-02.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Ange Legrolec</a><span class="badge badge-ecolo ml-1 py-1 px-2">EEL</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      PLFR pour 2020 (n°3074)
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      Article 4 - N°3366
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Retiré avt. discussion
+                    </p>
+                  </div>
+
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col-1 ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle">
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/amendment.html" class="text-gray-700">Au 1er alinéa, après les mots « pour des patients », sont insérés les mots « et leurs [...]</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /Amendements -->
+
+              <!-- Amendement -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-06.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Armand Cloud</a><span class="badge badge-lfi ml-1 py-1 px-2">LFI</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      PLFR pour 2020 (n°3074)
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      Article 4 - N°3366
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Retiré avt. discussion
+                    </p>
+                  </div>
+
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col-1 ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle">
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/amendment.html" class="text-gray-700">Au 1er alinéa, après les mots « pour des patients », sont insérés les mots « et leurs [...]</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /Amendements -->
+
+              <!-- Amendement -->
+              <div class="list-group-item px-0 py-1 small border-0 mb-1">
+                <div class="row align-items-center mb-3">
+                  <!-- Avatar -->
+                  <div class="col-auto">
+                      <img src="assets/img/avatar-13.png" alt="avatar" class="avatar-img rounded-circle">
+                  </div>
+                  
+                  <!-- nom & meta -->
+                  <div class="col ml-n2">
+                    <p class="m-0 text-dark text-decoration-none">
+                      <a href="single/profil-depute.html" class="text-decoration-none text-dark">Amandine Leguec</a><span class="badge badge-id ml-1 py-1 px-2">ID</span>
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      <span class="ic icon-clock"></span> 18 min 
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      PLFR pour 2020 (n°3074)
+                    </p>
+                    <p class="m-0 text-gray-500">
+                      Article 4 - N°3366
+                    </p>
+                  </div>
+
+                  <!-- text article et numéro-->
+                  <div class="d-none d-lg-block col ml-n2">
+                    <p class="m-0 text-gray-500">
+                      Retiré avt. discussion
+                    </p>
+                  </div>
+
+
+                  <!-- assemblée-->
+                  <div class="d-none d-lg-block col-1 ml-n2 text-gray-500">
+                    <img src="assets/img/assemblee.png" alt="avatar" class="avatar-img-sm rounded-circle">
+                  </div>
+
+                  <!-- like -->
+                  <div class="col-auto">                     
+                    <div class="col ml-n2">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-auto pl-5">
+                    <p class="m-0 pl-4"> <a href="single/amendment.html" class="text-gray-700">Au 1er alinéa, après les mots « pour des patients », sont insérés les mots « et leurs [...]</a></p>
+                  </div>  
+                </div>
+              </div>
+              <!-- /Amendements -->
+
+
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-lg-4  px-3 py-2">
-        <div class="border rounded-lg bg-white p-3">
-          <div class="row align-items-center">
-            <div class="col">
-              <p class="small text-uppercase text-gray-500 mb-1">Nombre total de dossiers </p>
-              <p class="h3 text-primary">30</p>
-            </div>
-            <div class="col-auto">
-              <span class="ic icon-folder text-primary bg-gray-400 d-block h3 p-3 mb-0"></span>
+      <div class="col-12 col-lg-4  px-3 py-2 d-flex justify-content-stretch">
+        <div class="card flex-grow-1">
+          <div class="d-flex justify-content-between align-items-stretch pl-3 border-bottom border-gray-200">
+            <h6 class="h6 mb-0 py-3">Vos dossiers</h6>
+            <p class="mb-0 py-3 pr-3"><a href="pages/dossier.html"> tout voir</a> </p>
+          </div>
+          
+          <!-- item dossier -->
+          <div class="list-group-item border-0 py-1 px-0">
+            <div class="row align-items-center d-flex justify-content-between py-3 px-3 bg-hover-gray-100 ">
+                <div class="col-6 small">
+                  <a href="single/dossier-justice.html" class="text-dark">Dévellopment durable</a>
+                </div>
+                <div class="col-auto small px-0 text-gray-500">
+                  <span class="ic icon-file-alt"></span> 53
+                </div>
+                <div class="col-auto px-0">
+                  <div class="col-auto">
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="no-arrow dropdown-toggle text-decoration-none" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h5 text-primary ic icon-more"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" style="">
+                        <a href="#!" class="dropdown-item">
+                          Renomer
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Supprimer
+                        </a>
+                        <a href="single/dossier-justice.html" class="dropdown-item">
+                          Ouvrir dans un nouvel onglet
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- /item dossier -->
+
+          <!-- item dossier -->
+          <div class="list-group-item border-0 py-1 px-0">
+            <div class="row align-items-center d-flex justify-content-between py-3 px-3 bg-hover-gray-100 ">
+                <div class="col-6 small">
+                  <a href="single/dossier-justice.html" class="text-dark">Justice</a>
+                </div>
+                <div class="col-auto small px-0 text-gray-500">
+                  <span class="ic icon-file-alt"></span> 53
+                </div>
+                <div class="col-auto px-0">
+                  <div class="col-auto">
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="no-arrow dropdown-toggle text-decoration-none" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h5 text-primary ic icon-more"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" style="">
+                        <a href="#!" class="dropdown-item">
+                          Renomer
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Supprimer
+                        </a>
+                        <a href="single/dossier-justice.html" class="dropdown-item">
+                          Ouvrir dans un nouvel onglet
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /item dossier -->
+
+          <!-- item dossier -->
+          <div class="list-group-item border-0 py-1 px-0">
+            <div class="row align-items-center d-flex justify-content-between py-3 px-3 bg-hover-gray-100 ">
+                <div class="col-6 small">
+                  <a href="single/dossier-justice.html" class="text-dark">Industrie</a>
+                </div>
+                <div class="col-auto small px-0 text-gray-500">
+                  <span class="ic icon-file-alt"></span> 53
+                </div>
+                <div class="col-auto px-0">
+                  <div class="col-auto">
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="no-arrow dropdown-toggle text-decoration-none" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h5 text-primary ic icon-more"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" style="">
+                        <a href="#!" class="dropdown-item">
+                          Renomer
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Supprimer
+                        </a>
+                        <a href="single/dossier-justice.html" class="dropdown-item">
+                          Ouvrir dans un nouvel onglet
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /item dossier -->
+          
+          <!-- item dossier -->
+          <div class="list-group-item border-0 py-1 px-0">
+            <div class="row align-items-center d-flex justify-content-between py-3 px-3 bg-hover-gray-100 ">
+                <div class="col-6 small">
+                  <a href="single/dossier-justice.html" class="text-dark">Education</a>
+                </div>
+                <div class="col-auto small px-0 text-gray-500">
+                  <span class="ic icon-file-alt"></span> 53
+                </div>
+                <div class="col-auto px-0">
+                  <div class="col-auto">
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="no-arrow dropdown-toggle text-decoration-none" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h5 text-primary ic icon-more"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" style="">
+                        <a href="#!" class="dropdown-item">
+                          Renomer
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Supprimer
+                        </a>
+                        <a href="single/dossier-justice.html" class="dropdown-item">
+                          Ouvrir dans un nouvel onglet
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /item dossier -->
+
         </div>
       </div>
+    </div>
+
+
     </div>
   </div>
 </section>
