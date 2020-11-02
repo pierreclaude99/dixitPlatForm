@@ -212,7 +212,7 @@ label.small-label {
   position: absolute;
   background: white;
   border: 1px solid #dedede;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .amsify-suggestags-area .amsify-suggestags-list ul.amsify-list {
