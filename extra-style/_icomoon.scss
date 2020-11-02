@@ -18,6 +18,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    vertical-align: -0.125em;
   
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -44,114 +45,155 @@
 }
 
 
+.icon-arrow-down:before {
+  content: "\e900";
 
+}
+.icon-arrow-left:before {
+  content: "\e901";
 
-  .icon-arrow-down:before {
-    content: "\e900";
-  }
-  .icon-arrow-left:before {
-    content: "\e901";
-  }
-  .icon-arrow-right:before {
-    content: "\e902";
-  }
-  .icon-arrow-up:before {
-    content: "\e903";
-  }
-  .icon-bell:before {
-    content: "\e904";
-  }
-  .icon-cancel:before {
-    content: "\e905";
-  }
-  .icon-chart-aera:before {
-    content: "\e906";
-  }
-  .icon-chart-bar:before {
-    content: "\e907";
-  }
-  .icon-chart-pie-alt:before {
-    content: "\e908";
-  }
-  .icon-check-box-blank:before {
-    content: "\e909";
-  }
-  .icon-check-box:before {
-    content: "\e90a";
-  }
-  .icon-clock:before {
-    content: "\e90b";
-  }
-  .icon-close:before {
-    content: "\e90c";
-  }
-  .icon-contact:before {
-    content: "\e90d";
-  }
-  .icon-dashboard:before {
-    content: "\e90e";
-  }
-  .icon-drop_down:before {
-    content: "\e90f";
-  }
-  .icon-export:before {
-    content: "\e910";
-  }
-  .icon-file-alt:before {
-    content: "\e911";
-  }
-  .icon-filter_list:before {
-    content: "\e912";
-  }
-  .icon-finger-pointer:before {
-    content: "\e913";
-  }
-  .icon-folder:before {
-    content: "\e914";
-  }
-  .icon-grade:before {
-    content: "\e915";
-  }
-  .icon-hand-paper:before {
-    content: "\e916";
-  }
-  .icon-heart:before {
-    content: "\e917";
-  }
-  .icon-help:before {
-    content: "\e918";
-  }
-  .icon-inbox:before {
-    content: "\e919";
-  }
-  .icon-info:before {
-    content: "\e91a";
-  }
-  .icon-menu:before {
-    content: "\e91b";
-  }
-  .icon-more:before {
-    content: "\e91c";
-  }
-  .icon-power-off:before {
-    content: "\e91d";
-  }
-  .icon-radio-default:before {
-    content: "\e91e";
-  }
-  .icon-radio-selected:before {
-    content: "\e91f";
-  }
-  .icon-search:before {
-    content: "\e920";
-  }
-  .icon-send:before {
-    content: "\e921";
-  }
-  .icon-sort-down:before {
-    content: "\e922";
-  }
-  .icon-twitter:before {
-    content: "\e923";
-  }
-  
+}
+.icon-arrow-right:before {
+  content: "\e902";
+
+}
+.icon-arrow-up:before {
+  content: "\e903";
+
+}
+.icon-bell:before {
+  content: "\e904";
+
+}
+.icon-cancel:before {
+  content: "\e905";
+
+}
+.icon-chart-aera:before {
+  content: "\e906";
+
+}
+.icon-chart-bar:before {
+  content: "\e907";
+
+}
+.icon-chart-pie-alt:before {
+  content: "\e908";
+
+}
+.icon-check-box-blank:before {
+  content: "\e909";
+
+}
+.icon-check-box:before {
+  content: "\e90a";
+
+}
+.icon-close:before {
+  content: "\e90b";
+
+}
+.icon-contact:before {
+  content: "\e90c";
+
+}
+.icon-dashboard:before {
+  content: "\e90d";
+
+}
+.icon-database-2:before {
+  content: "\e90e";
+
+}
+.icon-database:before {
+  content: "\e90f";
+
+}
+.icon-drop_down:before {
+  content: "\e910";
+
+}
+.icon-export:before {
+  content: "\e911";
+
+}
+.icon-file-alt:before {
+  content: "\e912";
+
+}
+.icon-filter_list:before {
+  content: "\e913";
+
+}
+.icon-finger-pointer:before {
+  content: "\e914";
+
+}
+.icon-folder:before {
+  content: "\e915";
+
+}
+.icon-hand-paper:before {
+  content: "\e916";
+
+}
+.icon-heart:before {
+  content: "\e917";
+
+}
+.icon-help:before {
+  content: "\e918";
+
+}
+.icon-inbox:before {
+  content: "\e919";
+
+}
+.icon-info:before {
+  content: "\e91a";
+
+}
+.icon-institution:before {
+  content: "\e91b";
+
+}
+.icon-mail:before {
+  content: "\e91c";
+
+}
+.icon-menu:before {
+  content: "\e91d";
+
+}
+.icon-more:before {
+  content: "\e91e";
+
+}
+.icon-power-off:before {
+  content: "\e91f";
+
+}
+.icon-radio-default:before {
+  content: "\e920";
+
+}
+.icon-search:before {
+  content: "\e921";
+
+}
+.icon-send:before {
+  content: "\e922";
+
+}
+.icon-sort-down:before {
+  content: "\e923";
+
+}
+.icon-sort:before {
+  content: "\e924";
+
+}
+.icon-twitter:before {
+  content: "\e925";
+
+}

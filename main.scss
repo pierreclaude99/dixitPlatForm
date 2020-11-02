@@ -22,6 +22,7 @@ $primary: #1abc9c  !default;
 $secondary: #0F7561!default;
 $info:     #FFA500 !default;
 $danger:        #EB4C4C !default;
+$success:        #05AFFC !default;
 
 $lrem:  aliceblue !default;
 $ecolo: green      !default;
@@ -75,6 +76,14 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-xs:                $font-size-base * .75 !default;
 
+$input-placeholder-color:               $gray-700 !default;
+.amsify-suggestags-input {
+    color: $input-placeholder-color !important;
+} 
+
+.amsify-suggestags-input::placeholder {
+    color: $input-placeholder-color !important;
+} 
 
 body {
     letter-spacing: -0.28px;
@@ -163,8 +172,7 @@ label.small-label {
 }
 
 
-
-
+.amsify-suggestags-list { width: calc(100% - 32px) !important; }
 
 // Close
 $close-color:                       $primary !default;
@@ -196,192 +204,34 @@ $close-color:                       $primary !default;
     display: none;
 }
 
+// Tables
 
-.amsify-suggestags-area
-.amsify-suggestags-input-area-default {
-	cursor: pointer;
-    border: 1px solid #cccccc;
-    min-height: 20px;
-    padding: 8px 5px;
+$table-hover-bg: $gray-100;
+
+.table { 
+    thead {
+        th {
+            border-top: 0px !important;
+            border-bottom: 1px solid $gray-200 !important;
+        }
+    }
+
 }
 
-.amsify-suggestags-area
-.amsify-suggestags-input-area {
-	text-align: left;
-	height: auto;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-input-area:hover {
-	cursor: text;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-input-area
-.amsify-suggestags-input {
-	max-width: 200px;
-	padding: 0px 4px;
-	border: 0;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-input-area
-.amsify-suggestags-input:focus {
-	outline: 0;
-}
-
-.amsify-focus {
-	border-color: #66afe9;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
-}
-
-.amsify-focus-light {
-	border-color: #cacaca;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(189, 189, 189, 0.6);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(189, 189, 189, 0.6);
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-label {
-	cursor: pointer;
-	min-height: 20px;
-}
-
-.amsify-toggle-suggestags {
-	float: right;
-	cursor: pointer;
-}
-
-.amsify-suggestags-area .amsify-suggestags-list {
-	display: none;
-	position: absolute;
-	background: white;
-	border: 1px solid #dedede;
-	z-index: 1;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list {
-	list-style: none;
-	padding: 3px 0px;
-	max-height: 150px;
-    overflow-y: auto;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-list-item {
-	text-align: left;
-    cursor: pointer;
-    padding: 0px 10px;	
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-list-item:active {
-	background: #717171;
-    color: white;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-list-group {
-	text-align: left;
-    padding: 0px 10px;
-    font-weight: bold;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-item-pad {
-    padding-left: 30px;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-item-noresult {
-    display: none;
-    color: #ff6060;
-    font-weight: bold;
-    text-align: center;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-.amsify-select-input {
-	display: none;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.active {
-	background: #d9d8d8;
-}
-
-.amsify-suggestags-area
-.amsify-suggestags-list
-ul.amsify-list
-li.amsify-item-pad.active {
-	font-weight: normal;
-}
-
-.amsify-suggestags-input-area
-.amsify-select-tag {
-    padding: 2px 7px;
-    margin: 0px 4px 1px 0px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    display: inline-block;
-}
-
-.amsify-suggestags-input-area
-.amsify-select-tag.col-bg {
-	background: #d8d8d8;
-    color: black;
-}
-
-/*.amsify-suggestags-input-area
-.amsify-select-tag:hover {
-	background: #737373;
-    color: white;
-}*/
-
-.amsify-suggestags-input-area
-.disabled.amsify-select-tag {
-    background: #eaeaea;
-    color: #b9b9b9;
-    pointer-events: none;
-}
-
-.amsify-suggestags-input-area
-.flash.amsify-select-tag {
-    background-color: #f57f7f;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-}
-
-.amsify-suggestags-input-area
-.amsify-remove-tag {
-	cursor: pointer;
+.table [data-sort]{
+    color: $gray-700;
+    text-decoration: none !important;
 }
 
 
+.table [data-sort]::after {
+    content: "\e924";
+    margin-left: .25rem;
+    font-family: 'icomoon';
+}
 
+
+@import "extra-style/_amsify.scss";
 @import "extra-style/_icomoon.scss";
 @import "extra-style/_tab.scss";
 @import "extra-style/_nav.scss";
