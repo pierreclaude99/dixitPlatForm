@@ -29,11 +29,16 @@ $ecolo: green      !default;
 $socialiste: pink  !default;
 $id: brown         !default;
 $cre: darkcyan     !default;
-
+$socialiste :#FE38AA !default;
 
 .badge-lrem {
     color: $dark;
     background-color: $lrem;
+}
+
+.badge-soc{
+    color: $white;
+    background-color: $socialiste;
 }
 
 .badge-ecolo {
@@ -247,10 +252,15 @@ $table-hover-bg: $gray-100;
     font-family: 'icomoon';
 }
 
+.list-sort {
+    font-size: 0.65rem;
+    font-weight: 600;
+}
 
 @import "extra-style/_amsify.scss";
 @import "extra-style/_icomoon.scss";
 @import "extra-style/_tab.scss";
 @import "extra-style/_nav.scss";
+@import "extra-style/_filter.scss";
 
 @import "node_modules/bootstrap/scss/bootstrap";

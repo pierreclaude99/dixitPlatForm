@@ -4,6 +4,11 @@
   background-color: aliceblue;
 }
 
+.badge-soc {
+  color: #fff;
+  background-color: pink;
+}
+
 .badge-ecolo {
   color: #fff;
   background-color: green;
@@ -170,6 +175,11 @@ label.small-label {
   content: "\e924";
   margin-left: .25rem;
   font-family: 'icomoon';
+}
+
+.list-sort {
+  font-size: 0.65rem;
+  font-weight: 600;
 }
 
 .amsify-suggestags-area .amsify-suggestags-input-area-default {
@@ -639,6 +649,44 @@ label.small-label {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.filter-offcanvas {
+  visibility: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border-radius: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1200;
+  max-width: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  transition: visibility .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.filter-offcanvas.show {
+  visibility: visible;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.filter-offcanvas.show {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 250px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  overflow-y: auto !important;
 }
 
 /*!
