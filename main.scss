@@ -196,13 +196,17 @@ $close-color:                       $primary !default;
 }
 
 .avatar-img-sm {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .no-arrow.dropdown-toggle::after{
     display: none;
 }
+
+// Pagination
+$pagination-color:  $dark;
+
 
 // Tables
 
@@ -214,8 +218,21 @@ $table-hover-bg: $gray-100;
             border-top: 0px !important;
             border-bottom: 1px solid $gray-200 !important;
         }
+        td {
+            border-top: 0px !important;
+            border-bottom: 1px solid $gray-200 !important;
+        }
     }
-
+    tbody {
+        th {
+            border-top: 0px !important;
+            border-bottom: 1px solid $gray-200 !important;
+        }
+        td {
+            border-top: 0px !important;
+            border-bottom: 1px solid $gray-200 !important;
+        }
+    }
 }
 
 .table [data-sort]{

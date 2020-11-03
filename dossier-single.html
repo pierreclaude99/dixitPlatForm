@@ -255,13 +255,12 @@
       <p class="small text-uppercase text-gray-700 mb-1">Dossiers</p>
       <h1 class="h3 text-dark">Justice</h1>
     </div>
-
   </div>
 </div>
 <!-- /header -->
 
-<!-- alert-and-folder -->
-<section id="alert-and-folder" class="p-2">
+<!-- main content -->
+<section id="main content" class="p-2">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 px-3 py-2">
@@ -279,13 +278,279 @@
 
             </div>
           </nav>
-          <div class="tab-content p-3" id="nav-tabContent">
+          <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="tab-tweet" role="tabpanel" aria-labelledby="nav-home-tab">
               <div class="list-group">
-                Tweet
+                <!-- Table folder -->
+                <table class="table  table-sm table-nowrap card-table table-hover">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th scope="col" class="p-3 bg-gray-100 h6 small text-gray-700 text-uppercase">
+                        <a href="#" class="list-sort desc" data-sort="tweet-date">
+                          Date
+                        </a>
+                      </th>
+                      <th scope="col" class="p-3 bg-gray-100 h6 small text-gray-700 text-uppercase">
+                        <a href="#" class="list-sort desc" data-sort="tweet-date">
+                          Date
+                        </a>
+                      </th>
+                      <th scope="col" class="d-none d-lg-table-cell p-3 bg-gray-100 h6 small text-gray-700 text-uppercase">
+                        <a href="#" class="list-sort desc" data-sort="tweet-group">
+                          Groupe
+                        </a>
+                      </th>
+                      <th scope="col" class="d-none d-lg-table-cell p-3 bg-gray-100 h6 small text-gray-700 text-uppercase">
+                        <a href="#" class="list-sort desc" data-sort="tweet-institut">
+                          Parlement
+                        </a>
+                      </th>
+                      <th scope="col" class="d-none d-lg-table-cell p-3 bg-gray-100 h6 small text-gray-700 text-uppercase">
+                        <a href="#" class="list-sort desc" data-sort="tweet-content">
+                          Contenu
+                        </a>
+                      </th>
+                      <th scope="col" class="d-none d-lg-table-cell p-3 bg-gray-100 h6 small text-gray-700 text-uppercase text-right">
+                              Favoris
+                      </th>
+                    </tr>
+                  </thead>
+                  <!-- /head -->
+
+                  <!-- body -->
+                  <tbody>
+                  <!-- item -->
+                    <tr class="text-gray-500 ">
+                      <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                        <img src="assets/img/avatar-01.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                        <div>
+                          <a href="profil-depute.html" class="text-decoration-none text-dark">
+                            Alice Konte
+                          </a>
+                          <br>
+                          <a href="#" class="text-gray-500">@Bjacquart</a>   
+                        </div>
+                      </td>
+                      <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                        <span class="ic icon-clock ml-2"></span> 18 min
+                      </td>
+                      <td class="tweet-group p-3 small align-middle">
+                        <span class="badge badge-id py-1 px-2">ID</span>
+                      </td>
+                      <td class="tweet-institut p-3 small align-middle">
+                        <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                      </td>
+                      <td class="tweet-content p-3 small align-middle">
+                        <a href="#" class="text-gray-700">Saraceni tamen nec amici nobis umquam nec hostes... </a>
+                      </td>
+                      <td class="tweet-like p-3 text-right align-middle">
+                        <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                      </td>
+                    </tr>
+                  <!-- /item -->
+
+                  <!-- item -->
+                  <tr class="text-gray-500 ">
+                    <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                      <img src="assets/img/avatar-02.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                      <div>
+                        <a href="profil-depute.html" class="text-decoration-none text-dark">
+                          Alain Couli
+                        </a>
+                        <br>
+                        <a href="#" class="text-gray-500">@Acouli</a>   
+                      </div>
+                    </td>
+                    <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                      <span class="ic icon-clock ml-2"></span> 18 min
+                    </td>
+                    <td class="tweet-group p-3 small align-middle">
+                      <span class="badge badge-ecolo py-1 px-2">EEL</span>
+                    </td>
+                    <td class="tweet-institut p-3 small align-middle">
+                      <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                    </td>
+                    <td class="tweet-content p-3 small align-middle">
+                      <a href="#" class="text-gray-700">Cognitis enim pilatorum caesorumque funeribus nemo... </a>
+                    </td>
+                    <td class="tweet-like p-3 text-right align-middle">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </td>
+                  </tr>
+                <!-- /item -->
+
+                  <!-- item -->
+                  <tr class="text-gray-500 ">
+                    <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                      <img src="assets/img/avatar-03.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                      <div>
+                        <a href="profil-depute.html" class="text-decoration-none text-dark">
+                          Benoit Jaqcuart
+                        </a>
+                        <br>
+                        <a href="#" class="text-gray-500">@Bjacquart</a>   
+                      </div>
+                    </td>
+                    <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                      <span class="ic icon-clock ml-2"></span> 18 min
+                    </td>
+                    <td class="tweet-group p-3 small align-middle">
+                      <span class="badge badge-lrem py-1 px-2">LREM</span>
+                    </td>
+                    <td class="tweet-institut p-3 small align-middle">
+                      <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                    </td>
+                    <td class="tweet-content p-3 small align-middle">
+                      <a href="#" class="text-gray-700">Sed tamen haec cum ita tutius observentur, quidam vigore... </a>
+                    </td>
+                    <td class="tweet-like p-3 text-right align-middle">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </td>
+                  </tr>
+                <!-- /item -->
+
+                  <!-- item -->
+                  <tr class="text-gray-500 ">
+                    <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                      <img src="assets/img/avatar-04.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                      <div>
+                        <a href="profil-depute.html" class="text-decoration-none text-dark">
+                          Alice Konte
+                        </a>
+                        <br>
+                        <a href="#" class="text-gray-500">@Bjacquart</a>   
+                      </div>
+                    </td>
+                    <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                      <span class="ic icon-clock ml-2"></span> 18 min
+                    </td>
+                    <td class="tweet-group p-3 small align-middle">
+                      <span class="badge badge-id py-1 px-2">ID</span>
+                    </td>
+                    <td class="tweet-institut p-3 small align-middle">
+                      <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                    </td>
+                    <td class="tweet-content p-3 small align-middle">
+                      <a href="#" class="text-gray-700">Raptim igitur properantes ut motus sui rumores celeritate ... </a>
+                    </td>
+                    <td class="tweet-like p-3 text-right align-middle">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </td>
+                  </tr>
+                <!-- /item -->
+
+                <!-- item -->
+                <tr class="text-gray-500 ">
+                  <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                    <img src="assets/img/avatar-05.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                    <div>
+                      <a href="profil-depute.html" class="text-decoration-none text-dark">
+                        Anne Gennet
+                      </a>
+                      <br>
+                      <a href="#" class="text-gray-500">@AGennet</a>   
+                    </div>
+                  </td>
+                  <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                    <span class="ic icon-clock ml-2"></span> 18 min
+                  </td>
+                  <td class="tweet-group p-3 small align-middle">
+                    <span class="badge badge-cre py-1 px-2">CRE</span>
+                  </td>
+                  <td class="tweet-institut p-3 small align-middle">
+                    <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                  </td>
+                  <td class="tweet-content p-3 small align-middle">
+                    <a href="#" class="text-gray-700">Cypriis contigui navigabant, quae Isauriae scopulis ... </a>
+                  </td>
+                  <td class="tweet-like p-3 text-right align-middle">
+                    <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                  </td>
+                </tr>
+              <!-- /item -->
+
+                <!-- item -->
+                <tr class="text-gray-500 ">
+                  <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                    <img src="assets/img/avatar-06.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                    <div>
+                      <a href="profil-depute.html" class="text-decoration-none text-dark">
+                        Alice Konte
+                      </a>
+                      <br>
+                      <a href="#" class="text-gray-500">@Bjacquart</a>   
+                    </div>
+                  </td>
+                  <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                    <span class="ic icon-clock ml-2"></span> 18 min
+                  </td>
+                  <td class="tweet-group p-3 small align-middle">
+                    <span class="badge badge-lrem py-1 px-2">LREM</span>
+                  </td>
+                  <td class="tweet-institut p-3 small align-middle">
+                    <img src="assets/img/gouv.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2"> Gouv.
+                  </td>
+                  <td class="tweet-content p-3 small align-middle">
+                    <a href="#" class="text-gray-700">Hac ex causa conlaticia stipe Valerius humatur... </a>
+                  </td>
+                  <td class="tweet-like p-3 text-right align-middle">
+                    <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                  </td>
+                </tr>
+              <!-- /item -->
+                
+                  <!-- item -->
+                  <tr class="text-gray-500 ">
+                    <td  class="tweet-name p-3 small d-none d-lg-flex align-items-center align-middle">
+                      <img src="assets/img/avatar-07.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                      <div>
+                        <a href="profil-depute.html" class="text-decoration-none text-dark">
+                          Alice Konte
+                        </a>
+                        <br>
+                        <a href="#" class="text-gray-500">@Bjacquart</a>   
+                      </div>
+                    </td>
+                    <td  class="tweet-date p-3 small d-none d-lg-table-cell align-middle">
+                      <span class="ic icon-clock ml-2"></span> 18 min
+                    </td>
+                    <td class="tweet-group p-3 small align-middle">
+                      <span class="badge badge-id py-1 px-2">ID</span>
+                    </td>
+                    <td class="tweet-institut p-3 small align-middle">
+                      <img src="assets/img/europe.png" alt="avatar" class="avatar-img-sm  rounded-circle mr-2"> Eu
+                    </td>
+                    <td class="tweet-content p-3 small align-middle">
+                      <a href="#" class="text-gray-700">Accedat huc suavitas quaedam oportet sermonum... </a>
+                    </td>
+                    <td class="tweet-like p-3 text-right align-middle">
+                      <a href="#" class="text-decoration-none like"><span class="ic h6 icon-heart"></span></a>  
+                    </td>
+                  </tr>
+                <!-- /item -->
+
+                </tbody>
+                  <!-- /body -->
+                </table>
+                  <!-- /Table folder -->
               </div>
 
+              <div class="px-4">
+                <nav aria-label="Page navigation example" p->
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav> 
+              </div>
+
+
             </div>
+
             <div class="tab-pane fade" id="tab-questions" role="tabpanel" aria-labelledby="nav-profile-tab">
               <div class="list-group">
                 Questions
@@ -315,7 +580,7 @@
     </div>
   </div>
 </section>
-<!-- /alert-and-folder -->
+<!-- /main content -->
 
 
 

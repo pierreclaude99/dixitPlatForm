@@ -133,8 +133,8 @@ label.small-label {
 }
 
 .avatar-img-sm {
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .no-arrow.dropdown-toggle::after {
@@ -142,6 +142,21 @@ label.small-label {
 }
 
 .table thead th {
+  border-top: 0px !important;
+  border-bottom: 1px solid #EDF2F9 !important;
+}
+
+.table thead td {
+  border-top: 0px !important;
+  border-bottom: 1px solid #EDF2F9 !important;
+}
+
+.table tbody th {
+  border-top: 0px !important;
+  border-bottom: 1px solid #EDF2F9 !important;
+}
+
+.table tbody td {
   border-top: 0px !important;
   border-bottom: 1px solid #EDF2F9 !important;
 }
@@ -5979,7 +5994,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #1abc9c;
+  color: #162A49;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
