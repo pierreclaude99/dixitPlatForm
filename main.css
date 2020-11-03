@@ -7227,7 +7227,7 @@ a.close.disabled {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 1500;
   display: block;
   margin: 0;
   font-family: "Poppins", sans-serif;
