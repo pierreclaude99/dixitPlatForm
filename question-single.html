@@ -1,1 +1,323 @@
-<h1>Question</h1>
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Dixit - Platform</title>
+        <meta name="description" content="Dixit platforme" />
+        <link rel="stylesheet" href="main.css" />
+
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <!-- Amsify Plugin -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+        <script type="text/javascript" src="https://frontbackend.com/storage/resources/jquery-amsify-suggestags/jquery.amsify.suggestags.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    </head>
+
+    <body>
+        <!-- nav ================================================== -->
+        <nav class="mobile-offcanvas bg-dark">
+            <div class="sidebar-sticky">
+                <div class="d-flex flex-column p-2">
+                    <div class="row my-2">
+                        <div class="col-6 col-lg-12 text-center">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="d-block mx-auto" src="assets/brand/logo-white.svg" alt="airporting" />
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-end d-lg-none">
+                            <button data-trigger="#navbar_main" class="d-lg-none btn btn-link" type="button"><span class="ic icon-close"></span></button>
+                        </div>
+                    </div>
+                    <!-- /brand -->
+
+                    <!-- main-menu -->
+                    <div class="main-menu">
+                        <ul class="p-0">
+                            <p class="h6 small text-gray-700 text-uppercase">Veille</p>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="index.html"> <span class="ic icon-dashboard mr-2"></span> Tableau de bord </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between">
+                                    <a class="nav-link px-0" href="dossiers.html"> <span class="ic icon-folder mr-2"></span> Dossiers </a>
+                                    <a type="button" class="btn btn-dark p-0 d-flex align-items-center" data-toggle="collapse" data-target="#sidebarFolder"> <span class="ic icon-arrow-down"></span> </a>
+                                </div>
+
+                                <div class="collapse" id="sidebarFolder">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="dossier-single.html" class="nav-link small"> Justice<span href="#" class="badge badge-primary ml-2">10</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="dossier-single.html" class="nav-link small"> Education<span href="#" class="badge badge-primary ml-2">15</span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between">
+                                    <a class="nav-link px-0" href="alertes.html"> <span class="ic icon-bell mr-2"></span> Alertes </a>
+                                    <a type="button" class="btn btn-dark p-0 d-flex align-items-center" data-toggle="collapse" data-target="#sidebarAlert"> <span class="ic icon-arrow-down"></span> </a>
+                                </div>
+
+                                <div class="collapse" id="sidebarAlert">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="alerte-single.html" class="nav-link small"> Justice<span href="#" class="badge badge-primary ml-2">10</span> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="alerte-single.html" class="nav-link small"> Education<span href="#" class="badge badge-primary ml-2">15</span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <hr class="hr-nav" />
+                            <p class="h6 small text-gray-700 text-uppercase">Recherche</p>
+
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="twitter.html"> <span class="ic icon-twitter mr-2"></span> Twitter </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active px-0" href="questions.html"> <span class="ic icon-hand-paper mr-2"></span> Questions </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="interventions.html"> <span class="ic icon-finger-pointer mr-2"></span> Interventions </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="amendements.html"> <span class="ic icon-file-alt mr-2"></span> Amendement </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0" href="contact.html"> <span class="ic icon-contact mr-2"></span> Contact </a>
+                            </li>
+
+                            <hr class="hr-nav" />
+                            <p class="h6 small text-gray-700 text-uppercase">Analyses <span href="#" class="badge badge-info ml-2 text-white">nouveau</span></p>
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between">
+                                    <a class="nav-link px-0" href="analyses.html"> <span class="ic icon-chart-pie-alt mr-2"></span> Analyses </a>
+                                    <a type="button" class="btn btn-dark p-0 d-flex align-items-center" data-toggle="collapse" data-target="#sidebarEurope"> <span class="ic icon-arrow-down"></span> </a>
+                                </div>
+
+                                <div class="collapse" id="sidebarEurope">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="analyse-single.html" class="nav-link small"> europe<span href="#" class="badge badge-primary ml-2">10</span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between">
+                                    <a class="nav-link px-0" href="analyses.html"> <span class="ic icon-chart-bar mr-2"></span> Sénat </a>
+                                    <a type="button" class="btn btn-dark p-0 d-flex align-items-center" data-toggle="collapse" data-target="#sidebarSenat"> <span class="ic icon-arrow-down"></span> </a>
+                                </div>
+
+                                <div class="collapse" id="sidebarSenat">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="analyse-single.html" class="nav-link small"> Sénat<span href="#" class="badge badge-primary ml-2">10</span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="d-flex justify-content-between">
+                                    <a class="nav-link px-0" href="analyses.html"> <span class="ic icon-chart-bar mr-2"></span> Assemblée </a>
+                                    <a type="button" class="btn btn-dark p-0 d-flex align-items-center" data-toggle="collapse" data-target="#sidebarAssemble"> <span class="ic icon-arrow-down"></span> </a>
+                                </div>
+
+                                <div class="collapse" id="sidebarAssemble">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="analyse-single.html" class="nav-link small"> Assemblée<span href="#" class="badge badge-primary ml-2">10</span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /main-menu -->
+                </div>
+            </div>
+        </nav>
+        <!-- /nav ================================================== -->
+
+        <!-- Main ================================================== -->
+        <main class="flex-grow-1 dashboard-main" role="main">
+            <!-- top bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex justify-content-between">
+                <div class="" id="">
+                    <button data-trigger="#navbar_main" class="d-lg-none btn btn-light" type="button"><span class="ic icon-menu"></span></button>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+                        <a class="nav-link text-decoration-none text-gray-700" href="mailto:contat@dixit.com"> <span class="ic icon-mail mr-2"></span>contact </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+                        <a class="nav-link text-decoration-none text-gray-700" href="aides.html"> <span class="ic icon-help mr-2"></span>aide </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ml-2">
+                        <a href="user-profile.html" class="avatar avatar-sm avatar-online text-decoration-none text-dark">
+                            Pierre claude
+                            <img src="assets/img/avatar.png" alt="avatar" class="avatar-img rounded-circle ml-3" />
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex align-items-center ml-2">
+                        <a href="" class="text-decoration-none">
+                            <span class="ic icon-power-off ml-3"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /top bar -->
+
+            <!-- header -->
+            <div class="bg-gray-400 p-3 border-bottom">
+                <div class="row">
+                    <div class="col-12 col-sm-6 px-4">
+                        <p class="small text-uppercase text-gray-700 mb-1">Question écrite n°18507 - Sénat, le 29/10/2020</p>
+                        <h1 class="h3 text-dark">Suspension des adoptions en Haïti par la France</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /header -->
+
+            <!-- main content -->
+            <section id="main content" class="p-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 px-3 py-2">
+                            <div class="card">
+                                <div id="info" class="col-lg-12 p-3 d-flex align-items-center justify-content-between border-bottom">
+                                    <div id="depute" class="d-flex align-items-center justify-content-start">
+                                        <img src="assets/img/avatar-01.png" alt="avatar" class="avatar-img-sm rounded-circle mr-2">
+                                        <div>
+                                            <a href="contact-single.html" class="text-decoration-none text-dark">Alice Konte</a>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <button class="btn btn-link text-decoration-none"> <span class="ic icon-institution"></span>   Voir source officiel</button>
+                                        <button class="btn btn-link text-decoration-none"><span class="ic h6 icon-heart"></button>
+                                </div>
+                                </div>
+
+                                <div class="p-3">
+                                    <p>
+                                        Mme Brigitte Micouleau attire l'attention de M. le ministre de l'Europe et des affaires étrangères sur la suspension des adoptions en Haïti par la France. En effet, l'assassinat d'un couple
+                                        d'adoptants français en Haïti le 24 novembre 2019 a conduit le ministère de l'Europe et des affaires étrangères à suspendre les adoptions pour une durée de trois mois (arrêté du 11 mars 2020). Cette
+                                        suspension a été prolongée par les arrêtés du 9 juin puis du 31 août 2020. La date d'échéance est aujourd'hui portée au 31 décembre 2020, avec la plus grande incertitude quant à la possibilité d'une
+                                        reprise des adoptions en 2021. Cette suspension a pour but la sécurité des ressortissants français. Néanmoins, au regard de la situation sécuritaire très dégradée en Haïti, l'institut du bien-être
+                                        social et de la recherche (IBESR) d'Haïti a accepté d'assouplir ses procédures d'adoption afin que les postulants n'aient pas à se déplacer en Haïti. De nombreux pays (Allemagne, Belgique, Canada,
+                                        Etats-Unis, Suisse) ont tenu à poursuivre les adoptions en utilisant de nouvelles procédures permettant de garantir la sécurité de leurs ressortissants : période de sociabilisation en visioconférence
+                                        et rapatriement direct des enfants dans le pays d'accueil. Ainsi, au vu de ces nouvelles procédures possibles, le maintien de la suspension des adoptions par la France lui semble injustifié. Les
+                                        enfants haïtiens vivant dans les orphelinats, dans des conditions d'insalubrité et de pauvreté extrêmes, sont les premières victimes de cette situation. Ils sont soumis à des carences multiples, à la
+                                        malnutrition, et leurs conditions de vie n'ont fait que se dégrader ces derniers mois. Pour ces enfants, l'adoption est leur seule chance d'avoir une vie meilleure. Cette situation est également
+                                        difficile à supporter pour les familles candidates à l'adoption, engagées dans un parcours particulièrement long et éprouvant, et qui sont prêtes à accueillir un enfant. Il faut savoir que quelque 250
+                                        dossiers français sont aujourd'hui enregistrés à l'IBESR d'Haïti qui est l'un des principaux pays d'origine des enfants adoptés en France (1er pays en 2018 représentant 10 % de l'ensemble des
+                                        adoptions internationales). La procédure classique constituée d'une ou deux semaines en Haïti pour établir les premiers contacts avec l'enfant (période dite de socialisation), suivie plusieurs mois
+                                        plus tard d'un deuxième déplacement d'une semaine en Haïti pour venir chercher l'enfant pourrait être adaptée de la manière suivants : la période de socialisation serait organisée en visioconférence,
+                                        comme c'est aujourd'hui le cas dans de nombreux pays ; les enfants haïtiens pourraient, dans un second temps, rejoindre leurs parents en France (directement en métropole ou via un autre pays comme
+                                        cela a été fait durant le confinement) en étant accompagnés par les correspondants des organismes autorisés pour l'adoption (OAA). Aussi, elle lui demande quand le Gouvernement envisagera de mettre en
+                                        place des mesures exceptionnelles qui permettront de lever la suspension des adoptions en Haïti, tout en préservant la sécurité des adoptants français qui n'auraient pas à se déplacer en Haïti.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /main content -->
+
+            <!-- filtre ================================================== -->
+            <div class="filter-offcanvas bg-white shadow-lg p-0" id="filter_panel">
+                <div class="d-flex align-content-between flex-wrap vh-100">
+                    <div class="w-100">
+                        <div class="col-12 border-bottom">
+                            <button data-trigger="#filter_panel" class="btn btn-white float-left position-absolute px-0 pt-3 text-primary"><span class="ic icon-close"></span></button>
+                            <p class="h5 pt-5">Filtre</p>
+                        </div>
+                        <div class="p-3">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label text-uppercase small-label">
+                                        Contenu <span class="ic icon-info text-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></span>
+                                    </label>
+                                    <input type="text" class="form-control border" id="recipient-name" placeholder="Contenu" />
+                                </div>
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label text-uppercase small-label">
+                                        Auteur <span class="ic icon-info text-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></span>
+                                    </label>
+                                    <input type="text" class="form-control border" id="recipient-name" placeholder="Auteur" />
+                                </div>
+                            </form>
+
+                            <div class="custom-control custom-checkbox pl-4 p-3 m-0">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                                <label class="custom-control-label small" for="customCheck1">recevez un recaptitulatif hebdomadaire de votre alerte</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bd-highlight w-100"><button class="btn btn-primary btn-block">Filtrer</button></div>
+                </div>
+            </div>
+            <!-- /filtre ================================================== -->
+        </main>
+        <!-- /Main ================================================== -->
+    </body>
+
+    <script src="js/extra-js.js"></script>
+    <script>
+        $("[data-toggle=tooltip").tooltip();
+    </script>
+    <script type="text/javascript">
+        $('input[name="city"]').amsifySuggestags({
+            suggestions: [
+                "anatole",
+                "bernard",
+                "cyprien",
+                "denise",
+                "eleonore",
+                "fabien",
+                "gerald",
+                "henri",
+                "ignacio",
+                "jordan",
+                "karine",
+                "lionel",
+                "nathanael",
+                "mathieu",
+                "orlando",
+                "pierre",
+                "quentin",
+                "robert",
+                "sabine",
+                "thiery",
+                "urslue",
+                "victoire",
+                "william",
+                "xavier",
+                "yves",
+                "zacharie",
+            ],
+        });
+    </script>
+</html>
