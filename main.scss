@@ -154,6 +154,19 @@ $zindex-modal: 1050 !default;
 $zindex-popover: 1060 !default;
 $zindex-tooltip: 1500 !default;
 
+
+.liked{
+	.ic{
+		&::before{
+			color: $primary !important;
+		}
+	}
+
+
+	
+}
+
+
 // Forms
 label.small-label {
 	font-size: $small-font-size !important;

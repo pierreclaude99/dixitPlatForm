@@ -340,7 +340,7 @@
                         <a href="#" class="text-gray-500">@Bjoncourt</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -368,7 +368,7 @@
                         <a href="#" class="text-gray-500">@Gleflec</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none liked" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -396,7 +396,7 @@
                         <a href="#" class="text-gray-500">@Mlegal</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -424,7 +424,7 @@
                         <a href="#" class="text-gray-500">@Bjoncourt</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -452,7 +452,7 @@
                         <a href="#" class="text-gray-500">@Gleflec</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -480,7 +480,7 @@
                         <a href="#" class="text-gray-500">@Mlegal</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -508,7 +508,7 @@
                         <a href="#" class="text-gray-500">@Bjoncourt</a>
                     </td>
                     <td  class="amendement-like py-3 pl-0 pr-3 small d-flex align-items-center justify-content-end col-1">
-                      <a href="#" class="text-decoration-none like liked"><span class="ic h6 icon-heart"></span></a>  
+                      <a class="text-decoration-none" data-toggle="modal" data-target="#modalLike" href="#"><span class="ic h6 icon-heart"></span></a>  
                     </td>
                   </tr>
                   <!-- /item -->
@@ -597,6 +597,39 @@
 <!-- /Main ================================================== -->
 
 
+<!-- Modal - Like -->
+<div class="modal fade" id="modalLike" tabindex="-1" role="dialog" aria-labelledby="creerUneAlerteContact" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter l'alerte à un dossier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-3">
+
+        <form>
+          <div class="form-group">
+            <label class="col-form-label text-uppercase small-label" for="inputState">Fréquence</label> <br>
+            <select id="inputState" class="selectpicker border rounded w-100" data-style="selectpicker-button">
+              <option selected>Dossier 1</option>
+              <option>Dossier 2</option>
+              <option>Dossier 3</option>
+            </select>
+          </div>
+        </form>
+
+        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link text-decoration-none" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

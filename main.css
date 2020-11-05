@@ -94,6 +94,10 @@ body {
   border-color: #1abc9c !important;
 }
 
+.liked .ic::before {
+  color: #1abc9c !important;
+}
+
 label.small-label {
   font-size: 80% !important;
 }
