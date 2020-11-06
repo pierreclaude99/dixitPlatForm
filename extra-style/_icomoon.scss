@@ -45,6 +45,20 @@
 }
 
 
+
+  .ic.icon-primary {
+       &::before{
+        color: $primary !important;
+      }   
+  }
+  
+  .ic.icon-lg{
+    &::before{
+     font-size: 2rem;
+   }   
+}
+
+
 .icon-arrow-down:before {
   content: "\e900";
 

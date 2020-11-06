@@ -78,6 +78,10 @@ body {
   background-color: #f9fbfd !important;
 }
 
+.bg-gray-100 {
+  background-color: #F4F9FF !important;
+}
+
 .bg-gray-400 {
   background-color: #f7f9fd !important;
 }
@@ -157,22 +161,22 @@ label.small-label {
 
 .table thead th {
   border-top: 0px !important;
-  border-bottom: 1px solid #edf2f9 !important;
+  border-bottom: 1px solid #F4F9FF !important;
 }
 
 .table thead td {
   border-top: 0px !important;
-  border-bottom: 1px solid #edf2f9 !important;
+  border-bottom: 1px solid #F4F9FF !important;
 }
 
 .table tbody th {
   border-top: 0px !important;
-  border-bottom: 1px solid #edf2f9 !important;
+  border-bottom: 1px solid #F4F9FF !important;
 }
 
 .table tbody td {
   border-top: 0px !important;
-  border-bottom: 1px solid #edf2f9 !important;
+  border-bottom: 1px solid #F4F9FF !important;
 }
 
 .table [data-sort] {
@@ -373,6 +377,14 @@ label.small-label {
 
 .like.liked .ic::before {
   color: #1abc9c !important;
+}
+
+.ic.icon-primary::before {
+  color: #1abc9c !important;
+}
+
+.ic.icon-lg::before {
+  font-size: 2rem;
 }
 
 .icon-arrow-down:before {
@@ -2794,7 +2806,7 @@ pre code {
 
 .table .thead-light th {
   color: #6e84a3;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-color: #dee2e6;
 }
 
@@ -2947,7 +2959,7 @@ pre code {
 }
 
 .form-control:disabled, .form-control[readonly] {
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   opacity: 1;
 }
 
@@ -4317,7 +4329,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #edf2f9;
+  border-top: 1px solid #F4F9FF;
 }
 
 .dropdown-item {
@@ -4640,7 +4652,7 @@ input[type="button"].btn-block {
   color: #6e84a3;
   text-align: center;
   white-space: nowrap;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border: 1px solid #f7f9fd;
   border-radius: 0.25rem;
 }
@@ -4760,7 +4772,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
 }
 
 .custom-control-label {
@@ -4909,7 +4921,7 @@ input[type="button"].btn-block {
 
 .custom-select:disabled {
   color: #6c757d;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
 }
 
 .custom-select::-ms-expand {
@@ -4962,7 +4974,7 @@ input[type="button"].btn-block {
 
 .custom-file-input[disabled] ~ .custom-file-label,
 .custom-file-input:disabled ~ .custom-file-label {
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -5001,7 +5013,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #6e84a3;
   content: "Browse";
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
 }
@@ -5235,7 +5247,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #edf2f9 #edf2f9 #dee2e6;
+  border-color: #F4F9FF #F4F9FF #dee2e6;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -5752,7 +5764,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #edf2f9;
+  border: 1px solid #F4F9FF;
   border-radius: 0.25rem;
 }
 
@@ -5816,7 +5828,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid #edf2f9;
+  border-bottom: 1px solid #F4F9FF;
 }
 
 .card-header:first-child {
@@ -5826,7 +5838,7 @@ input[type="button"].btn-block {
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid #edf2f9;
+  border-top: 1px solid #F4F9FF;
 }
 
 .card-footer:last-child {
@@ -6003,7 +6015,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-radius: 0.25rem;
 }
 
@@ -6060,7 +6072,7 @@ input[type="button"].btn-block {
   z-index: 2;
   color: #117964;
   text-decoration: none;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-color: #dee2e6;
 }
 
@@ -6302,7 +6314,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-radius: 0.3rem;
 }
 
@@ -6485,7 +6497,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
   border-radius: 0.25rem;
 }
 
@@ -6576,7 +6588,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-action:active {
   color: #212529;
-  background-color: #edf2f9;
+  background-color: #F4F9FF;
 }
 
 .list-group-item {

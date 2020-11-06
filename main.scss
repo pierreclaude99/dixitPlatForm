@@ -6,7 +6,7 @@
 
 $white: #fff !default;
 $gray-100: #f9fbfd !default;
-$gray-200: #edf2f9 !default;
+$gray-200: #F4F9FF !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #f7f9fd !default;
 $gray-500: #95aac9 !default;
@@ -113,6 +113,11 @@ body {
 		background-color: $gray-100 !important;
 	}
 }
+
+.bg-gray-100 {
+	background-color: $gray-200 !important;
+}
+
 
 .bg-gray-400 {
 	background-color: $gray-400 !important;
